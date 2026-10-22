@@ -1,0 +1,878 @@
+ARCHIVE BepInEx With Configuration Manager 1555 5.4.23.5 2026-09-15T01-57Z cF8ECcmbO.zip / BepInEx/plugins/ConfigurationManager/ConfigurationManager.dll
+ASSEMBLY ConfigurationManager, Version=19.0.0.0, Culture=neutral, PublicKeyToken=null
+ConfigurationManager.ConfigurationManager BepInPlugin : com.bepis.bepinex.configurationmanager | Configuration Manager | 19.0
+REFERENCES mscorlib, System.Core, BepInEx, System, UnityEngine
+ARCHIVE Collection Tracker v3.0.3 867 3.0.3 2026-10-10T16-55Z JoErZJ3qX.zip / BepInEx/plugins/CollectionTracker/CollectionTracker.dll
+ASSEMBLY CollectionTracker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+CollectionTracker.CollectionTrackerPlugin BepInPlugin : iitzsamurai.collectiontracker | Collection Tracker | 3.0.3
+CollectionTracker.CollectionTrackerPlugin BepInDependency : 
+CollectionTracker.CollectionTrackerPlugin BepInDependency : 
+CollectionTracker.CollectionTrackerPlugin BepInDependency : 
+REFERENCES mscorlib, UnityEngine.CoreModule, BepInEx, 0Harmony, UnityEngine.AssetBundleModule, System, Assembly-CSharp, System.Core, EnhancedPrefabLoader.API, UnityEngine.UI, Unity.TextMeshPro, UnityEngine.AnimationModule, UnityEngine.UIModule, EnhancedPrefabLoader, UnityEngine.ImageConversionModule, UnityEngine.InputLegacyModule, CardGradeOverhaul
+ARCHIVE EnhancedPrefabLoader (1.0classic) 496 6.2.6 2026-10-04T00-41Z GRqkzGYiH.zip / plugins\EnhancedPrefabLoader\EnhancedPrefabLoader.dll
+ASSEMBLY EnhancedPrefabLoader, Version=6.2.6.0, Culture=neutral, PublicKeyToken=null
+EnhancedPrefabLoader.Plugin BepInDependency : EnhancedPrefabLoader.API | 6.1.0
+EnhancedPrefabLoader.Plugin BepInDependency : 
+EnhancedPrefabLoader.Plugin BepInDependency : 
+EnhancedPrefabLoader.Plugin BepInDependency : 
+EnhancedPrefabLoader.Plugin BepInPlugin : EnhancedPrefabLoader | Enhanced Prefab Loader | 6.2.6
+REFERENCES netstandard, BepInEx, 0Harmony, UnityEngine.CoreModule, UnityEngine.AssetBundleModule, EnhancedPrefabLoader.API, Assembly-CSharp, Unity.TextMeshPro, UnityEngine.UI, Newtonsoft.Json, UnityEngine.VideoModule, CollectionWeaver, Unity.InputSystem, UnityEngine.AnimationModule, UnityEngine.UIModule, UnityEngine.PhysicsModule
+ARCHIVE EnhancedPrefabLoader (1.0classic) 496 6.2.6 2026-10-04T00-41Z GRqkzGYiH.zip / plugins\EnhancedPrefabLoader\Scripts.dll
+ASSEMBLY Scripts, Version=6.0.0.0, Culture=neutral, PublicKeyToken=null
+REFERENCES netstandard, Assembly-CSharp, UnityEngine.PhysicsModule, UnityEngine.CoreModule, UnityEngine.AudioModule, UnityEngine.VideoModule
+ARCHIVE EnhancedPrefabLoader (1.0classic) 496 6.2.6 2026-10-04T00-41Z GRqkzGYiH.zip / patchers\EnhancedPrefabLoader\CollectionWeaver.dll
+ASSEMBLY CollectionWeaver, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+REFERENCES netstandard, Mono.Cecil, MonoMod.Utils, Mono.Cecil.Rocks
+ARCHIVE EnhancedPrefabLoader (1.0classic) 496 6.2.6 2026-10-04T00-41Z GRqkzGYiH.zip / patchers\EnhancedPrefabLoader\EnhancedPrefabLoaderPrepatch.dll
+ASSEMBLY EnhancedPrefabLoaderPrepatch, Version=6.2.6.0, Culture=neutral, PublicKeyToken=null
+REFERENCES netstandard, CollectionWeaver, BepInEx, Mono.Cecil, Newtonsoft.Json
+ARCHIVE EnhancedPrefabLoader API 1144 6.1.0 2026-07-27T21-07Z PwQutPS5m.zip / plugins\EnhancedPrefabLoader.API\EnhancedPrefabLoader.API.dll
+ASSEMBLY EnhancedPrefabLoader.API, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null
+EnhancedPrefabLoader.API.EplApiPlugin BepInPlugin : EnhancedPrefabLoader.API | Enhanced Prefab Loader API | 6.1.0
+REFERENCES netstandard, BepInEx, Assembly-CSharp, UnityEngine.CoreModule, UnityEngine.UI
+ARCHIVE Furniture Overhaul v1.6.1 1592 1.6.1 2026-10-09T17-23Z NfA2yNICt.zip / BepInEx/plugins/FurnitureOverhaul/FurnitureOverhaul.dll
+ASSEMBLY FurnitureOverhaul, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+FurnitureOverhaul.Plugin BepInPlugin : com.qolmods.furnitureoverhaul | Furniture Overhaul | 1.6.1
+REFERENCES mscorlib, Assembly-CSharp, 0Harmony, UnityEngine.CoreModule, System.Core, UnityEngine.PhysicsModule, AstarPathfindingProject, Unity.TextMeshPro, System, UnityEngine.UIModule, UnityEngine.UI, UnityEngine.AnimationModule, BepInEx, Unity.InputSystem, UnityEngine.AudioModule, UnityEngine.JSONSerializeModule, UnityEngine.ImageConversionModule, UnityEngine.InputLegacyModule, com.rlabrecque.steamworks.net
+TEXT README.txt
+FURNITURE OVERHAUL  v1.6.1
+==========================
+
+The furniture shop on the phone, redesigned, and the Diamond Collection: 44 pieces of shop furniture
+in walnut, black metal and brass, built for a card shop. Singles walls and towers, retail
+shelves, a checkout desk, a cart you push, a claw machine, a vending machine that stands
+outside, a comic tower, turning spinners and more. With CardGrade Overhaul
+installed, three grading pieces join them: a card scanner, a loupe table and a cracking bench.
+Everything is bought in the shop, placed, moved and boxed like the game's own furniture, and
+saves with the game.
+
+Requires BepInEx 5.4.x (x64) only. No other mod is needed. The three grading pieces need
+CardGrade Overhaul; without it they are not sold.
+
+
+THE FURNITURE SHOP
+------------------
+  The game's own furniture shop gets a full page instead of the small list:
+
+  ALL              everything you can buy, in level order
+  VANILLA ITEMS    the game's own furniture
+  DIAMOND COL.     the Diamond Collection
+  GRADING          the card scanner, loupe table and cracking bench (only with CardGrade Overhaul)
+  OTHER           furniture from other mods, grouped by mod (Enhanced Prefab Loader packs)
+
+  A KIND filter narrows the list (card displays, retail shelves, checkout, storage, tables,
+  machines, decor). Click a card to see the piece in live 3D (drag to turn it), the
+  description, the level it needs and the price; set a quantity and BUY. Bought furniture
+  arrives in boxes as usual.
+
+  FINISHES: every Diamond piece can be bought in your own colours. Pick the body, the wood,
+  the metal trim and the card holders (rugs: style, colour and border) from the swatches
+  above Quantity; the 3D view shows the result before you buy, and the finish saves with the
+  game.
+
+  CONTROLLER: the whole page works with a gamepad. D-pad or left stick moves, A selects and
+  buys, B goes back, LB / RB switch tabs, the triggers or the right stick scroll. With an item
+  selected, X (Xbox) or Square (PlayStation) jumps straight to the Buy button.
+
+  Furniture from other mods that plug into this shop gets its own tab while that mod is
+  installed. With many tabs the tab column scrolls. The page can be switched off in the settings file (see SETTINGS); the phone
+  then opens the game's own furniture list.
+
+
+THE DIAMOND COLLECTION
+----------------------
+  Every piece is walnut with black metal, a brass line and the diamond emblem. Levels run
+  from 2 to 17 so the simple pieces come first.
+
+  CARD DISPLAYS
+    Diamond One Sided Table        18 singles in two rows, all facing the front (lv 3)
+    Diamond One Sided Display      18 cards behind glass; Manage switches display / selling (lv 6)
+    Diamond Corner                 6 singles in a glass corner; joins the checkout and the
+                                   one sided tables into an L or a U (lv 6)
+    Diamond Turntable              8 singles on a slowly turning disc under a glass bell,
+                                   display only; E with empty hands holds it (lv 9)
+    Diamond Showcase               12 singles on three rows behind glass (lv 10)
+    Diamond Singles Case           48 singles, hangs on the wall at any height (lv 11)
+    Diamond Card Tower (S)         8-sided glass tower, 48 singles, sold from every side;
+                                   Manage switches to display only (lv 13)
+    Diamond Singles Wall           96 singles, 8 columns x 12 rows, floor standing (lv 14)
+    Diamond Singles Wall Kinked    88 singles, kinked at mid height like a Japanese case (lv 15)
+    Diamond Card Tower (M)         96 singles (lv 15)
+    Diamond Card Tower (L)         144 singles (lv 17)
+
+  RETAIL SHELVES
+    Diamond Accessory Wall 1x4 / 2x4 / 3x4   open shelves for sleeves, deck boxes, dice
+                                   and packs; every shelf its own product and price (lv 4-5)
+    Diamond Low Retail Shelf / Low Single    3 shelves at counter height, 6 sections or one
+                                   product per tier (lv 5)
+    Diamond Retail Shelf / Single Retail Shelf   5 shelves, 10 sections holding up to
+                                   8 booster boxes or 48 packs each, or one product per tier
+                                   holding 96 packs (lv 6)
+    Diamond Booster Spinner        a compact 4-sided booster stand; E turns it (lv 3)
+    Diamond Pack Carousel          two turning tiers with 34 packs round each (lv 8)
+    Diamond Comic Tower            4 sides of 7 wire pockets for comics, every pocket its
+                                   own selling bay (lv 7)
+    Customers buy from all of these and your staff restock them.
+
+    Diamond Bargain Bin            a bin of loose cards at one price, filled like the donation
+                                   box; customers dig through it and pay at the checkout (lv 2)
+    Diamond Bargain Table          the same with three sections, each at its own price (lv 4)
+
+  CHECKOUT AND STORAGE
+    Diamond Checkout               a full checkout desk with a 12 card showcase built in:
+                                   ring up customers, take payments, trade and sell singles
+                                   from the display (lv 12)
+    Diamond Checkout (plain)       the same desk clad in walnut flutes, without the showcase
+                                   (lv 12)
+    Diamond Cart                   12 large or 24 small stock boxes on two decks. Click the
+                                   handle to push it round the shop, Place to park it. Q moves
+                                   it like any furniture. Empty it before boxing (lv 2)
+
+  STORAGE
+    Diamond Stock Counter, Stock Rack (S) / (M) / (L), Open Rack, Stock Wall (2x5)
+                                   warehouse racks in the Diamond style; placed side by side
+                                   they snap together, also with the game's own racks
+
+  DECOR
+    Diamond Rug Small / Medium / Large, Diamond Runner   plush, flatweave or bordered rugs in
+                                   your colours; furniture stands on them (lv 2)
+    Diamond Rug (Custom)           resize it where it lies: aim at it and press U. Growing it
+                                   costs per square metre, shrinking gives money back, from
+                                   3 x 2 m up to 16 x 16 m. Works with No Collision Placement
+
+  SPEAKERS (sold while QOL ShopOS is installed; they play its Music app, hang on any wall)
+    Diamond Wall Monitor           a rounded two-way monitor on a brass ball bracket (lv 4)
+    Diamond Corner Speaker         a quarter-round column that slides flush into a wall
+                                   corner (lv 6)
+    Diamond Sound Line             a 1.2 m sound bar with six drivers on two brass wall posts,
+                                   made for over a row of shelves or behind the counter (lv 8)
+    Diamond Pendant Speaker        a speaker globe in a brass halo ring on a curved wall arm
+                                   (lv 10)
+
+  TABLES AND MACHINES
+    Diamond Play Table             a walnut table for two players with chairs and playmats,
+                                   works with matches and tournaments (lv 7)
+    Diamond Vending Machine        12 coils of booster packs. Customers buy at your prices,
+                                   also while the shop is closed, and it can stand outside
+                                   on the street (lv 8)
+    Diamond Claw Machine           a playable claw machine with up to 256 packs, figures or
+                                   plushies. Open the door to load it from a box or your
+                                   hand, set the fee, play it yourself or let customers pay
+                                   to play; winners collect from the chute (lv 12)
+
+  GRADING (needs CardGrade Overhaul)
+    Diamond Loupe Table            a walnut table with a velvet mat, a 10x loupe and a lamp.
+                                   Press F, pick a card from your album and sweep the loupe
+                                   over it to find its flaws and learn its condition (lv 3)
+    Diamond Cracking Bench         a work bench with a slab vise. Put a graded slab in the
+                                   vise and press F to crack it open (lv 6)
+    Diamond Card Scanner           a conveyor scanner on a walnut cabinet. Load up to 100
+                                   cards from your album or your hand, watch them ride under
+                                   the camera and land in the output box, then add them back
+                                   to your album. F shows each scan (lv 16)
+    Without CardGrade Overhaul the Grading tab is not shown and the pieces are not sold.
+    Pieces already placed stay in the shop and tell you they need CardGrade Overhaul.
+
+
+HOW THINGS WORK
+---------------
+  * Refinish: aim at a placed Diamond piece and press P to paint it in new colours. It costs a
+    little, like buying the finish.
+  * Buying, placing, moving, boxing and saving use the game's own systems. Every piece has
+    its own stable object type, so a save with Diamond furniture in it loads again exactly.
+  * Product icons are rendered from the real models the first time the shop opens and cached
+    in BepInEx\cache\FurnitureOverhaul. The first opening takes a moment.
+  * The claw machine and the checkout keep a small companion file next to the game saves
+    (FurnitureOverhaulClaw, FurnitureOverhaulCheckout in the game's save folder). Losing it
+    never loses stock; it only holds poses, fees and statistics.
+  * Optional: with Pallet Delivery installed the cart can load from staged delivery cargo.
+    With Enhanced Prefab Loader packs installed their furniture appears under OTHER.
+
+
+SETTINGS
+--------
+  BepInEx\config\com.qolmods.furnitureoverhaul.cfg (or Configuration Manager, F1):
+
+  [Shop] NewFurnitureShop     true = the new furniture page, false = the game's own list.
+  [CardScanner]               seconds per card, tray and output box sizes, auto start, auto
+                              add to the album, sounds and volume of the Diamond Card Scanner.
+  [Debug] VerboseLogging     false = only one line in the log at start (warnings and errors
+                              are always written); true = the full details, for bug reports.
+
+
+INSTALLATION
+------------
+  1. Install BepInEx 5.4.x (x64) and start the game once so BepInEx creates its folders.
+     Close the game before installing or updating the mod.
+  2. Extract the archive into the game folder (the folder that contains BepInEx).
+  3. The DLL must sit at  BepInEx\plugins\FurnitureOverhaul\FurnitureOverhaul.dll
+  4. Start the game. The settings file is created on first start.
+
+  Vortex: install the archive as usual, its folders mirror the game folder.
+
+  Never keep two copies of the DLL (for example one in BepInEx\plugins and one in
+  BepInEx\scripts). Remove older copies first.
+
+
+UNINSTALLING
+------------
+  Box up every Diamond piece and sell or store the boxes BEFORE removing the mod. A save
+  that still contains Diamond furniture cannot be loaded by the game without the mod: the
+  game does not know the object types. Keep a backup of your saves before removing it.
+
+
+KNOWN LIMITATIONS
+-----------------
+  * English texts only.
+  * The furniture page opens a little slower the first time in a session.
+  * Major game updates may need a compatibility update.
+
+
+SUPPORT
+-------
+  Discord: https://discord.gg/55uqwjnT37  (bug reports, ideas, every new mod first)
+
+  Every mod is free and stays free. If they make your shop better and you feel like it,
+  you can buy me a coffee at https://ko-fi.com/qolmods - it keeps the mods and the Discord going.
+
+  Created by Evers665 (QOL Mods)
+
+
+CHANGELOG
+---------
+v1.6.1
+  * Customers skip the claw machine and the Bargain Bin in areas closed with NO ENTRY in Shop C
+    and the Basement, not only on the upper floors.
+  * Workers now restock and price cards on Diamond card displays they could not reach before.
+  * Price tags on Diamond card displays are easy to click.
+  * Trading customers stand inside the Diamond checkout desk instead of past its end.
+  * Cards on Diamond checkout displays are counted by CardGrade Overhaul, so their slab records
+    are kept.
+  * Fixed an error when quitting the game with a Diamond checkout display in the shop.
+  * When Load Cards on the card scanner cannot open the fill screen, the log now says why.
+
+v1.6.0
+  * Four Diamond wall speakers for QOL ShopOS: Wall Monitor, Corner Speaker, Sound Line and
+    Pendant Speaker. They play the music from its Music app and are sold while QOL ShopOS is
+    installed.
+  * The speakers sit flat against the wall and hang wherever other wall decorations can.
+
+v1.5.0
+  * Diamond furniture is now drawn like the game's own furniture, so glass in front of it, the
+    shop window and modded packs on its shelves all look right.
+  * Diamond furniture no longer turns pitch black at night on the game's newrender branch
+    (Steam 1.0newrender).
+  * The card scanner panel now works with a controller.
+  * The green and red placement outline no longer disappears, also for the game's own furniture.
+  * Claw machine prices are kept after reloading a save.
+  * The vending machine can be placed on the upper floors.
+  * Smelly customers skip the claw machine until they have been sprayed.
+  * Customers use claw machines on other floors, skip floors closed with NO ENTRY, and are no
+    longer sent away after paying for a long walk.
+  * Bargain Bin Quick Fill no longer crashes on a card set from a removed pack.
+  * Comics 11 to 14 fit in the comic spinner.
+  * Fixed FPS drops when looking at Diamond One Sided Displays with priced cards.
+  * The card scanner and loupe table screens scale to fit ultrawide screens.
+  * In co-op, a joining player's card scanner monitor no longer gets stuck on "NO RECORD".
+  * When the game refuses to sell your last checkout, the log now lists the counters it knows.
+
+v1.4.0
+  * New: the Grading tab with three pieces for CardGrade Overhaul: the Diamond Card Scanner,
+    the Diamond Loupe Table and the Diamond Cracking Bench. They need CardGrade Overhaul;
+    without it the tab is hidden and placed pieces say what they need.
+  * Claw machine fees, plays and wins are no longer lost when the claw companion file does not
+    match the save exactly (for example after another mod changed the save). Each save slot
+    now keeps its own copy, and machines are matched by their place in the shop.
+  * Ready for QOL Co-op (coming soon): finishes and refinishes, custom rug sizes, display only
+    settings, Bargain Bin prices and the claw machine (price, plays, service door, prizes in
+    the chute and live games) are the same for every player in the shop.
+  * A stray checkout display without its checkout is now removed when the game saves, so the
+    checkout's cards are saved again.
+  * The tab column in the furniture shop scrolls when there are more tabs than fit.
+
+v1.3.0
+  * Customers now walk to claw machines up to 40 m away and on another floor (like upstairs),
+    not only to machines close by on their own floor.
+  * Short messages from the vending machine, turntable, card tower, Bargain Bin and furniture
+    from other mods now show on screen. Before, the claw machine cleared them straight away.
+  * Key prompts over furniture from other mods no longer flicker or disappear while a claw
+    machine is in the shop.
+  * Other mods can now give their furniture Diamond finishes: Staff Overhaul 2.0's break room
+    furniture gets its walnut wood, fluted panels, upholstery, name plates, colour choice in
+    the shop and Refinish (P) from Furniture Overhaul.
+
+v1.2.1
+  * Clicking a price tag on a One Sided table no longer opens the binder for the empty slot
+    in front of it.
+  * Aiming at a slot's stand on a One Sided table picks that slot, so the back row is easy
+    to fill, with or without a card in hand.
+  * Price tags on One Sided tables sit a little higher and no longer dip into the table.
+  * The Diamond Showcase and Diamond Checkout glass is clear again instead of frosted.
+  * The Bargain Bin and Bargain Table price can be changed with a controller: up and down
+    pick a row, left and right change the price, B closes.
+
+v1.2.0
+  * New: six Diamond storage racks for the warehouse (Stock Counter, Stock Rack S, M and L,
+    Open Rack, Stock Wall). Placed side by side they snap together, also with the game's own
+    warehouse racks.
+  * New: Diamond Rug (Custom). Resize it on the floor with U, up to 16 x 16 m. Growing costs
+    per square metre, shrinking pays back. Works with No Collision Placement.
+  * New: Refinish. Press P on a placed Diamond piece to repaint it.
+  * Fixed identical rugs laid on top of each other flickering.
+  * Fixed rugs and the bargain bin failing on older game builds (a missing game field turned
+    the rug into a shelf).
+  * Fixed the Refinish key hint disappearing at the checkout.
+  * Furniture from other mods (like Arcade) now turns in the shop preview like Diamond pieces.
+
+v1.1.1
+  * Price tags on the Diamond displays are now always drawn in front of the cards. Seen from
+    below, a card could cover the tag of its slot.
+
+v1.1.0
+  * Finishes: buy every Diamond piece in your own colours (body, wood, trim, card holders), with
+    a live 3D preview in the shop that you can turn.
+  * New: Diamond Rug Small, Medium, Large and Diamond Runner, in three styles with their own
+    colour and border.
+  * New: Diamond Bargain Bin and Diamond Bargain Table. Fill them like the donation box, set a
+    price per section; customers pick cards and pay at the checkout.
+  * New: Diamond Checkout without the card showcase.
+  * Controller support for the whole furniture shop page, with a button to jump to Buy.
+  * Fixed the tournament prize shelf multiplying on every load, which tanked the FPS and in the
+    worst case froze the load at 100%. Saves that already have the copies are repaired when they
+    load: the stacked copies collapse to one, keeping the one with cards on it.
+  * Fixed the Diamond Cart: Q moves it like other furniture again (click still pushes it).
+  * Fixed boxed Diamond furniture showing a vanilla picture after a reload. The box label now
+    shows the piece in its own colours, like in the shop.
+  * Much better performance near Diamond furniture: pieces are merged into far fewer render
+    parts, price tags share one canvas per shelf, and the checks that ran every frame now only
+    run when something changes. Saving no longer searches the whole shop each time.
+  * Claw machines that nobody plays cost almost nothing per frame.
+  * The log shows one line at start; the details are behind Debug > VerboseLogging.
+
+v1.0.5
+  * Fixed the load that stopped and threw you back to the title screen with "Shelf data not
+    loaded correctly". A Diamond One Sided Display whose saved sale mode and sale flag did not
+    agree made this mod stop the game's own load. Such a piece is now put right while it loads
+    and the load carries on; the log says which piece it was.
+  * Fixed buying furniture taking the money without delivering anything, vanilla pieces included.
+    After the failed load above, the game was left with an empty stand-in for its shelf manager,
+    and every purchase after that failed halfway, with the money already gone. The stand-in is
+    now replaced by the real one at load, and a purchase is refused before any money moves if the
+    shop is not ready to place furniture.
+  * A one sided table saved as a selling table whose price tags lost their wiring is wired again.
+    If that is not possible it stays a display with its cards untouched, instead of breaking in
+    the middle of a customer's purchase. Switch it back on with Manage.
+
+v1.0.4
+  * The furniture shop page keeps its 16:9 frame on wider monitors, with the page ground filling
+    the sides. On a 21:9 screen the frame grew with the aspect and spread three cards over the width.
+  * Works on the Unity 6 builds of the game (Steam 1.0newrender, Microsoft Store 1.1.4): the page
+    failed to build there, the showcase icon threw, and every warehouse shelf purchase took the money
+    and spawned nothing. Three engine members renamed between the builds are now looked up either way.
+  * The comic spinner takes every manga of the comic size, so manga from an expansion mod fit too.
+    It only took the game's own ten before and refused the rest as if full.
+
+v1.0.3
+  * Mirrored game messages are tagged Game, not Furniture Overhaul; the game's Steam check message at
+    the main menu is left out.
+
+v1.0.2
+  * Fixed the load that ended half done (HUD at Level 0 / Day 1, the sign with its default name, rooms
+    locked, the player stuck). The game counts every placed piece into a fixed list indexed by object
+    type; this mod's types lie beyond it, so the game's customer setup threw during the load. The count
+    now takes any object type. Installs with One Sided Card Tables never saw it, that mod guards the
+    same fault.
+  * The game's own errors and the load steps are written into BepInEx\LogOutput.log.
+
+v1.0.1
+  * Fixed the mod refusing to load a save. A save with a Diamond Checkout whose companion file did
+    not match exactly made the mod reject the game's load; the game then started a fresh shop and
+    could not save for the rest of the session. The mod never rejects a load or a save any more: it
+    looks for a companion that fits, and if none does, the checkout display starts empty and the
+    shop itself loads as normal.
+  * Fixed the furniture shop page being destroyed when a save was loaded after another game in the
+    same session.
+  * Fixed saves that lost every piece of furniture. When the game rebuilt its save lists, furniture
+    that stood in the shop could be missing from its registry and was left out of the save, so the
+    shop came back empty after a reload. The mod now checks the registry against the shop right
+    before every save and registers anything missing, and writes a line to the log when it does.
+  * A self-test wrote a misleading "pieces were removed from the loaded save" warning to the log on
+    every load. Gone.
+
+v1.0.0
+  * First release.
+
+TEXT BepInEx/config/EnhancedPrefabLoader.cfg
+## Settings file was created by plugin Enhanced Prefab Loader v6.0.7
+## Plugin GUID: EnhancedPrefabLoader
+
+[CardUI]
+
+## When enabled, foil cards display the sparkle glitter effect.
+# Setting type: Boolean
+# Default value: true
+Sparkle Foil Enabled = true
+
+[CollectionBinderUI]
+
+# Setting type: Single
+# Default value: 30
+ExpansionSpacingX = 30
+
+# Setting type: Single
+# Default value: -45
+ExpansionSpacingY = -45
+
+# Setting type: Vector2
+# Default value: {"x":325.0,"y":184.5}
+ExpansionButtonSize = {"x":325.0,"y":184.5}
+
+[GamePlay]
+
+## When enabled, base-game card expansions will use the EPL experience formula instead of the vanilla formula.
+# Setting type: Boolean
+# Default value: false
+UseCustomExpForBase = true
+
+[Hotkeys]
+
+Force Price Reset = F11
+
+[Logging]
+
+# Setting type: LogLevel
+# Default value: Warning
+# Acceptable values: Debug, Info, Warning, Error, None
+Minimum log level to log = Error
+
+[Performance]
+
+## When enabled, replaces the base game's per-frame shelf item visibility pass with change detection — item meshes are only toggled when a shelf crosses the distance/angle threshold, plus a periodic 0.5s refresh. Greatly reduces per-frame overhead in large stocked shops. Disable if another mod patches ShelfManager.Update.
+# Setting type: Boolean
+# Default value: false
+OptimizeShelfVisibilityUpdates = true
+
+## When enabled, base-game monster data lookups use a cached dictionary instead of scanning the data lists on every call (card prices, pack opening, card rendering). Lookups that miss the cache fall back to the vanilla scan. Disable if another mod patches InventoryBase.GetMonsterData.
+# Setting type: Boolean
+# Default value: false
+OptimizeMonsterDataLookups = true
+
+## When enabled, base-game card save index lookups use a cached index dictionary instead of rescanning the shown monster list on every call (the hottest card path: add/remove card, prices, binder, bulk donation). EPL expansions are unaffected — they already use their own cached path. Disable if another mod patches CPlayerData.GetCardSaveIndex.
+# Setting type: Boolean
+# Default value: false
+OptimizeCardSaveIndexLookups = true
+
+## When enabled, the base game's web-streamed textures (downloaded card art) release their CPU-side pixel copies after loading, halving their memory for the session. Disable if another mod reads pixels from these cached textures.
+# Setting type: Boolean
+# Default value: false
+ReduceStreamedTextureMemory = true
+
+## When enabled, restock data lookups (check price screens, barcode scanner, customer purchasing, trades) use a cached index dictionary over the combined base+EPL entry list instead of rescanning it per call. Disable if another mod patches InventoryBase.GetRestockData* methods.
+# Setting type: Boolean
+# Default value: false
+OptimizeRestockDataLookups = true
+
+## When enabled, the in-game clock string is only rebuilt when the displayed time actually changes instead of every frame, removing constant string allocation garbage. Disable if another mod patches LightManager.EvaluateTimeClock.
+# Setting type: Boolean
+# Default value: false
+OptimizeClockUpdates = true
+
+## When enabled, base-game card border type lookups use fixed tables instead of building a new list on every call (several call sites run per card in loops). EPL expansions are unaffected. Disable if another mod patches CPlayerData.GetCardBorderType.
+# Setting type: Boolean
+# Default value: false
+OptimizeCardBorderTypeLookups = true
+
+[PlayTable]
+
+## When enabled, base game card textures will not appear on play tables. If no mod expansion textures are available, this setting is ignored.
+# Setting type: Boolean
+# Default value: false
+DisableBaseGamePlayCards = true
+
+## Chance (%) that a play table's decorations (playmat, deck box, comic book) are picked from EPL-added items when any are unlocked. At 0 every unlocked item has equal odds, so large base-game pools drown out EPL items; at 100 EPL items are always picked when available.
+# Setting type: Int32
+# Default value: 50
+# Acceptable value range: From 0 to 100
+PreferEplTableItemsChance = 100
+
+## When enabled, the cards laid out on play tables become individual face-up cards instead of the vanilla facedown rows, with configurable facedown/tapped rolls per card. Card faces always come from the expansion the table picked.
+# Setting type: Boolean
+# Default value: true
+FlipTableCards = true
+
+## Chance (%) for each flipped table card to be placed facedown. Only used when FlipTableCards is enabled.
+# Setting type: Int32
+# Default value: 10
+# Acceptable value range: From 0 to 100
+FacedownCardChance = 10
+
+## Chance (%) for each flipped table card to be "tapped" (rotated sideways). Only used when FlipTableCards is enabled.
+# Setting type: Int32
+# Default value: 10
+# Acceptable value range: From 0 to 100
+TappedCardChance = 10
+
+## Angle in degrees a "tapped" table card is rotated. Only used when FlipTableCards is enabled.
+# Setting type: Single
+# Default value: 75
+# Acceptable value range: From 0 to 90
+TappedCardAngle = 90
+
+[Trading]
+
+## When enabled, base-game expansions (Tetramon, Destiny, Ghost) will not appear in customer card trade/sell selection.
+# Setting type: Boolean
+# Default value: false
+ExcludeBaseGameCardsFromTrade = true
+
+[UI]
+
+# Setting type: Single
+# Default value: 30
+ExpansionSpacingX = 30
+
+# Setting type: Single
+# Default value: -45
+ExpansionSpacingY = -45
+
+# Setting type: Vector2
+# Default value: {"x":325.0,"y":184.5}
+ExpansionButtonSize = {"x":325.0,"y":184.5}
+
+# Setting type: Single
+# Default value: 30
+RaritySpacingX = 30
+
+# Setting type: Single
+# Default value: -45
+RaritySpacingY = -45
+
+# Setting type: Vector2
+# Default value: {"x":325.0,"y":184.5}
+RarityButtonSize = {"x":325.0,"y":184.5}
+
+
+TEXT BepInEx/config/munch.gradingoverhaul.cfg
+## Settings file was created by plugin Grading Overhaul v3.3.0
+## Plugin GUID: munch.gradingoverhaul
+
+[1. Master]
+
+## Master toggle for the entire mod.
+# Setting type: Boolean
+# Default value: true
+Enable Mod = true
+
+## Enable verbose logging for development.
+# Setting type: Boolean
+# Default value: false
+Debug Mode = false
+
+[2. Features]
+
+## Temporarily disables the game's 'Auto Next Card' setting during the grading box reveal sequence to prevent animation bugs.
+# Setting type: Boolean
+# Default value: true
+Disable Auto Next Card = true
+
+## When enabled, all graded cards are sent directly to your binder after the reveal sequence.
+## No cards will appear in your hand.
+# Setting type: Boolean
+# Default value: false
+Auto Place Cards In Binder = false
+
+## Enable RMB hold multi-select when selecting cards for grading.
+# Setting type: Boolean
+# Default value: true
+Multi-Select Grading = true
+
+## Press this hotkey to instantly complete all queued gradings without advancing the day. (FAKE CARDS WILL SPAWN).
+# Setting type: KeyboardShortcut
+# Default value: 
+Instant Grade Hotkey (FAKE CARDS) = 
+
+## Controls the order graded cards are revealed.
+## Grade (Low→High): reveals worst cards first.
+## Grade (High→Low): reveals best cards first.
+## Price (Low→High): reveals cheapest cards first.
+## Price (High→Low): reveals most expensive cards first.
+# Setting type: String
+# Default value: Grade (Low→High)
+# Acceptable values: Grade (Low→High), Grade (High→Low), Price (Low→High), Price (High→Low)
+Reveal Sort Mode = Grade (Low→High)
+
+[3. Probability Weights]
+
+## If enabled, grading uses Custom slider odds but stamps the resulting card as a Custom (cheater) card skinned as the selected website company. THIS WILL PRODUCE FAKE CARDS.
+# Setting type: Boolean
+# Default value: false
+Enable Probability System (FAKE CARDS) = false
+
+## Apply a preset to all grade weight sliders. Only used when Company Mode is OFF.
+# Setting type: String
+# Default value: Balanced
+# Acceptable values: Custom, Balanced, Vanilla
+Preset = Balanced
+
+## Sum of all grade weights (aim for 100%). Only used when Company Mode is OFF.
+# Setting type: Int32
+# Default value: 100
+# Acceptable value range: From 0 to 999
+Total Weight = 100
+
+## Probability weight for Grade 10 cards (manual mode only).
+# Setting type: Int32
+# Default value: 5
+# Acceptable value range: From 0 to 100
+Grade 10 Weight = 5
+
+## Probability weight for Grade 9 cards (manual mode only).
+# Setting type: Int32
+# Default value: 9
+# Acceptable value range: From 0 to 100
+Grade 09 Weight = 9
+
+## Probability weight for Grade 8 cards (manual mode only).
+# Setting type: Int32
+# Default value: 20
+# Acceptable value range: From 0 to 100
+Grade 08 Weight = 20
+
+## Probability weight for Grade 7 cards (manual mode only).
+# Setting type: Int32
+# Default value: 29
+# Acceptable value range: From 0 to 100
+Grade 07 Weight = 29
+
+## Probability weight for Grade 6 cards (manual mode only).
+# Setting type: Int32
+# Default value: 14
+# Acceptable value range: From 0 to 100
+Grade 06 Weight = 14
+
+## Probability weight for Grade 5 cards (manual mode only).
+# Setting type: Int32
+# Default value: 9
+# Acceptable value range: From 0 to 100
+Grade 05 Weight = 9
+
+## Probability weight for Grade 4 cards (manual mode only).
+# Setting type: Int32
+# Default value: 7
+# Acceptable value range: From 0 to 100
+Grade 04 Weight = 7
+
+## Probability weight for Grade 3 cards (manual mode only).
+# Setting type: Int32
+# Default value: 4
+# Acceptable value range: From 0 to 100
+Grade 03 Weight = 4
+
+## Probability weight for Grade 2 cards (manual mode only).
+# Setting type: Int32
+# Default value: 2
+# Acceptable value range: From 0 to 100
+Grade 02 Weight = 2
+
+## Probability weight for Grade 1 cards (manual mode only).
+# Setting type: Int32
+# Default value: 1
+# Acceptable value range: From 0 to 100
+Grade 01 Weight = 1
+
+[4. Styles]
+
+## Visual style for all Beckett slabs
+# Setting type: String
+# Default value: Old
+# Acceptable values: Old, Samurai
+Slab Design Style = Samurai
+
+## Font style for all Beckett slabs
+# Setting type: String
+# Default value: Old
+# Acceptable values: Old, Samurai
+Font Style = Samurai
+
+
+ARCHIVE Purchase Overhaul v1.3.0 1609 1.3.0 2026-10-07T01-46Z hkHfxhDmi.zip / BepInEx/plugins/PurchaseOverhaul/PurchaseOverhaul.dll
+ASSEMBLY PurchaseOverhaul, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+PurchaseOverhaul.Plugin BepInPlugin : com.qolmods.purchaseoverhaul | Purchase Overhaul | 1.3.0
+PurchaseOverhaul.Plugin BepInDependency : 
+PurchaseOverhaul.Plugin BepInDependency : 
+PurchaseOverhaul.Plugin BepInDependency : 
+REFERENCES mscorlib, Assembly-CSharp, 0Harmony, UnityEngine.CoreModule, System, System.Core, UnityEngine.UI, BepInEx, EnhancedPrefabLoader.API, Unity.TextMeshPro, UnityEngine.TextCoreFontEngineModule, UnityEngine.UIModule, Unity.InputSystem, UnityEngine.ImageConversionModule, UnityEngine.InputLegacyModule, UnityEngine.AnimationModule
+TEXT README.txt
+PURCHASE OVERHAUL  v1.3.0
+Formerly One Purchase.
+
+One phone app for every shop order. Browse vanilla stock, board games and every expansion shop
+in one grid, search across all of them, fill one cart and place one order with one delivery fee.
+
+
+INSTALL
+-------
+  1. BepInEx 5.4.x (x64) must be installed. Start the game once so BepInEx creates its folders.
+  2. Drop the BepInEx folder from this zip into your game folder, so the file ends up at
+     ...\TCG Card Shop Simulator\BepInEx\plugins\PurchaseOverhaul\PurchaseOverhaul.dll
+  3. Start the game. The Purchase Overhaul app is on the phone.
+
+  Vortex: install the zip as a normal mod.
+
+  Coming from One Purchase: your settings carry over by themselves. If the old
+  BepInEx\plugins\OnePurchase folder is still there, Purchase Overhaul switches it off and
+  renames the old file so it no longer loads. You can delete that folder.
+
+
+REQUIRES
+--------
+  BepInEx 5.4.x (x64)
+
+  Recommended, not required:
+    Phone Overhaul       the app gets its own tile on the phone home screen. Without it, the
+                         vanilla Order Stock tile opens Purchase Overhaul instead.
+    Enhanced Prefab Loader   its shops show up in the app on their own, with their own tile.
+
+
+HOW TO USE
+----------
+  * Open the app from the phone.
+  * The left rail lists every shop that has products, plus All shops at the top.
+  * The category chips filter the grid, the search field searches every shop at once.
+  * Click a product to open it, set the number of boxes and add it to the cart.
+  * The cart button at the top right opens the cart. Lines are grouped per shop.
+  * Place the order once. Every box arrives at the delivery spot as usual, one delivery fee
+    for the whole order.
+  * A product you have not unlocked says so, and the licence can be bought from the same page.
+    Products you own the licence for are listed first.
+  * Drag a shop in the left rail to change the order of the shops.
+  * Each product shows how many boxes you have in the warehouse and on your shelves.
+  * Restock warehouse in the cart fills the cart with what your labelled warehouse shelves
+    are missing, minus boxes already on the way.
+  * Auto restock under it places that order by itself once a day at the time you pick.
+
+
+CONTROLLER
+----------
+  D-pad / left stick   move between the shops, the filters, the products, the product panel
+                       and the cart
+  A / Cross            press the button in focus. Press it again on the chosen product to jump
+                       to Add to cart, hold it on - and + to count fast
+  B / Circle           close the cart, or leave the app
+  X / Square           open or close the cart
+  LB / RB              previous or next shop
+  LT / RT              page through the products, the shops or the cart
+  Right stick          scroll
+
+
+SETTINGS
+--------
+  BepInEx\config\com.qolmods.purchaseoverhaul.cfg (or Configuration Manager, F1):
+    Phone     ReplaceStockOrderTile
+    Catalogue ShowLockedItems, ShopOrder
+    Cart      MaxBoxesPerLine
+    Restock   AutoRestock, AutoRestockTime
+
+
+UNINSTALL
+---------
+  Delete BepInEx\plugins\PurchaseOverhaul. Nothing is written to your save.
+
+
+CHANGELOG
+---------
+v1.3.0
+  * The app now scales to fit 16:10 screens, laptops and the Steam Deck.
+  * Licences you buy in the other shop apps now show as owned in Purchase Overhaul, so you
+    never pay twice.
+  * New Clear button in the cart empties it in one press.
+  * Restock warehouse now tells you when the cart costs more than you have.
+  * The 64 pack and 8 box versions show a double picture like the vanilla shop.
+  * Modded shops show up even when Enhanced Prefab Loader loads after Purchase Overhaul.
+  * The Recycle mod's discount now applies in Purchase Overhaul.
+
+v1.1.2
+  * Controller support for the whole app, with the game's own Xbox and PlayStation button
+    icons. See CONTROLLER above for the buttons.
+
+v1.1.1
+  * Discounts from Recycle and Volume Discount now apply to the cart and the order, with a
+    Discount line under the delivery fee when either mod is installed.
+
+v1.1.0
+  * Renamed from One Purchase to Purchase Overhaul. Settings carry over, and an old
+    One Purchase install next to it is switched off and renamed so the app is never there twice.
+  * Auto restock: order what your warehouse is missing once a day at a time you choose.
+  * Restock warehouse button in the cart.
+  * Products you own the licence for are listed first.
+  * Drag shops in the left rail to change their order.
+  * Warehouse and shelf stock on every product.
+
+v1.0.1
+  * Works on the game's new rendering branch. The page could not open there at all, and after
+    that the game's own top bar was drawn over it.
+  * The game's top bar now goes away at once when the app opens instead of fading.
+
+v1.0.0
+  * First release.
+
+SUPPORT
+-------
+  Discord: https://discord.gg/55uqwjnT37  (bug reports, ideas, every new mod first)
+
+  Every mod is free and stays free. If they make your shop better and you feel like it,
+  you can buy me a coffee at https://ko-fi.com/qolmods - it keeps the mods and the Discord going.
+
+  Created by Evers665 (QOL Mods)
+
+ARCHIVE QOLShopOS V1.1.1 1754 1.1.1 2026-10-09T17-23Z Sz9x0Sd17.zip / BepInEx/plugins/ShopOS/ShopOS.dll
+ASSEMBLY ShopOS, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+ShopOS.Plugin BepInPlugin : com.qolmods.shopos | QOL ShopOS | 1.1.1
+ShopOS.Plugin BepInDependency : 
+ShopOS.Plugin BepInDependency : 
+ShopOS.Plugin BepInDependency : 
+REFERENCES mscorlib, UnityEngine.CoreModule, Assembly-CSharp, UnityEngine.UI, System.Core, BepInEx, Unity.TextMeshPro, EnhancedPrefabLoader.API, 0Harmony, System, UnityEngine.AudioModule, UnityEngine.UnityWebRequestModule, com.rlabrecque.steamworks.net, Unity.InputSystem, UnityEngine.UIModule, UnityEngine.PhysicsModule, AstarPathfindingProject, UnityEngine.VideoModule, UnityEngine.TextCoreFontEngineModule, UnityEngine.ImageConversionModule, UnityEngine.InputLegacyModule, UnityEngine.IMGUIModule, UnityEngine.AnimationModule, UnityEngine.UnityWebRequestTextureModule
+ARCHIVE RTCGO Holographics 1676 1.0.6 2026-10-09T23-39Z z9sYrzvIu.zip / BepInEx/plugins/RTCGO Holographics/RTCGOHolographics.dll
+ASSEMBLY RTCGOHolographics, Version=1.0.3.0, Culture=neutral, PublicKeyToken=null
+RTCGOHolographics.Plugin BepInPlugin : iitzsamurai.rtcgoholographics | RTCGO Holographics | 1.0.6
+RTCGOHolographics.Plugin BepInDependency : 
+RTCGOHolographics.Plugin BepInDependency : 
+REFERENCES mscorlib, Assembly-CSharp, EnhancedPrefabLoader.API, UnityEngine.CoreModule, System.Core, UnityEngine.UI, UnityEngine.UIModule, UnityEngine.AssetBundleModule, System, 0Harmony, BepInEx, UnityEngine.ImageConversionModule
+ARCHIVE TextureReplacer 1.6.9 69 1.6.9 2026-10-07T22-54Z JoErZJ3Zg.zip / TextureReplacer/TextureReplacer.dll
+ASSEMBLY TextureReplacer, Version=1.6.9.0, Culture=neutral, PublicKeyToken=null
+TextureReplacer.BepInExPlugin BepInPlugin : shaklin.TextureReplacer | TextureReplacer | 1.6.9
+REFERENCES mscorlib, UnityEngine.CoreModule, BepInEx, UnityEngine.UI, Unity.TextMeshPro, Assembly-CSharp, UnityEngine.IMGUIModule, System.Drawing, System.Core, UnityEngine.TextRenderingModule, UnityEngine.UIModule, UnityEngine.PhysicsModule, AstarPathfindingProject, 0Harmony, Newtonsoft.Json, System, UnityEngine.ImageConversionModule, UnityEngine.InputLegacyModule
+CollectionTracker DEP args= fields== props==
+CollectionTracker DEP args= fields== props==
+CollectionTracker DEP args= fields== props==
+EnhancedPrefabLoader DEP args=EnhancedPrefabLoader.API 6.1.0 fields= props=
+EnhancedPrefabLoader DEP args= fields== props==
+EnhancedPrefabLoader DEP args= fields== props==
+EnhancedPrefabLoader DEP args= fields== props==
+PurchaseOverhaul DEP args= fields== props==
+PurchaseOverhaul DEP args= fields== props==
+PurchaseOverhaul DEP args= fields== props==
+ShopOS DEP args= fields== props==
+ShopOS DEP args= fields== props==
+ShopOS DEP args= fields== props==
+RTCGOHolographics DEP args= fields== props==
+RTCGOHolographics DEP args= fields== props==
+CollectionTracker DEP com.qolmods.cardgradeoverhaul | 2
+CollectionTracker DEP com.qolmods.shopos | 2
+CollectionTracker DEP munch.PhoneOverhaul | 2
+EnhancedPrefabLoader DEP EnhancedPrefabLoader.API | 6.1.0
+EnhancedPrefabLoader DEP shaklin.TextureReplacer | 2
+EnhancedPrefabLoader DEP FastPackOpening | 2
+EnhancedPrefabLoader DEP munch.PhoneOverhaul | 2
+PurchaseOverhaul DEP munch.PhoneOverhaul | 2
+PurchaseOverhaul DEP EnhancedPrefabLoader.API | 2
+PurchaseOverhaul DEP EnhancedPrefabLoader | 2
+ShopOS DEP com.qolmods.purchaseoverhaul | 2
+ShopOS DEP EnhancedPrefabLoader.API | 2
+ShopOS DEP EnhancedPrefabLoader | 2
+RTCGOHolographics DEP EnhancedPrefabLoader.API | 1
+RTCGOHolographics DEP munch.holographicoverhaul | 2
+
+Conclusion : les contenus Real TCG Overhaul sont des packs JSON/assetbundles chargés par Enhanced Prefab Loader, pas nécessairement un plugin DLL distinct. Phone Overhaul absent des archives (présent dans installation Steam), CardGrade Overhaul et Holographic Overhaul absents (dépendances optionnelles déclarées). Contenus Pocket sous EPLCardAnimator/animated ; plugin d'animation absent des archives. Audit statique seulement, aucun lancement ni installation. Purchase Overhaul fournit une application de commandes propre : filtre d'achats TCG.GameModes à adapter/vérifier. Types Pokémon supplémentaires ne sont actuellement pas classés comme boosters par le plugin GameModes.
+
+Correction après lecture du README ShopOS 1.1.1 : ShopOS fonctionne seul et lit directement les boutiques Enhanced Prefab Loader pour créer leurs applications. Phone Overhaul n'est donc pas nécessaire pour cet accès ; sa dépendance EPL est optionnelle. Pack de test prévu sans Phone Overhaul. Restent à vérifier en exécution les contenus Pocket/animations et les règles GameModes avec les applications ShopOS/Purchase Overhaul.
