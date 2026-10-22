@@ -8,7 +8,7 @@ Full description, settings and FAQ: [mod page](publish/TCG_Card_Translations/REA
 
 ## Install
 
-Players: install it from Thunderstore (r2modman) or Nexus Mods. Requires BepInEx 5 and Enhanced Prefab Loader.
+**Download:** [Nexus Mods](https://www.nexusmods.com/tcgcardshopsimulator/mods/1930) (Thunderstore / r2modman: coming soon). Requires BepInEx 5 and Enhanced Prefab Loader.
 
 ## Building from source (Windows, .NET SDK 8)
 
@@ -31,4 +31,4 @@ Install: `TCG.CardTranslations.dll` in `BepInEx/plugins/TCGCardTranslations`, wi
 
 ---
 
-**En français :** Noms des cartes, éditions et produits des packs Enhanced Prefab Loader dans ta langue, sans modifier les packs. Noms français inclus pour les premières séries Pokémon (sans images). Les joueurs l'installent depuis Thunderstore ou Nexus ; ce dépôt contient le code source.
+**En français :** Noms des cartes, éditions et produits des packs Enhanced Prefab Loader dans ta langue, sans modifier les packs. Noms français inclus pour les premières séries Pokémon (sans images). Les joueurs le téléchargent sur [Nexus Mods](https://www.nexusmods.com/tcgcardshopsimulator/mods/1930) (bientôt sur Thunderstore) ; ce dépôt contient le code source.
